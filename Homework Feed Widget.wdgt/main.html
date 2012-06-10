@@ -1,0 +1,42 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="SafariStyle.css">
+    <script type="text/javascript" src="AppleClasses/AppleAnimator.js" charset="utf-8"></script>
+    <script type="text/javascript" src="AppleClasses/AppleButton.js" charset="utf-8"></script>
+    <script type="text/javascript" src="AppleClasses/AppleInfoButton.js" charset="utf-8"></script>
+    <script type="text/javascript" src="AppleClasses/AppleScrollbar.js" charset="utf-8"></script>
+    <script type="text/javascript" src="AppleClasses/AppleScrollArea.js" charset="utf-8"></script>
+    <script type="text/javascript" src="Parts/parts.js" charset="utf-8"></script>
+    <script type="text/javascript" src="localizedStrings.js" charset="utf-8"></script>
+    <script type="text/javascript" src="attributes.js" charset="utf-8"></script>
+    <script type="text/javascript" src="main.js" charset="utf-8"></script>
+</head>
+<body onload="load();">
+    <div id="front">
+        <img id="frontImg" src="Parts/Images/front.png" alt="">
+        <div id="topRectangleShape"></div>
+        <div id="bottomRectangleShape" onclick="clickOnBottomRectangle(event);"></div>
+        <div id="feedTitle"></div>
+        <div id="contentarea">
+            <div id="content" class="content" style="position: absolute; left: 11px; top: 0px; right: 36px; bottom: 0px; overflow-x: hidden; overflow-y: hidden; "></div>
+        </div>
+        <div id="loading-text"></div>
+        <div id="info"></div>
+    </div>
+    <div id="back">
+        <img id="backImg" src="Parts/Images/back.png" alt="">
+        <img id="backDevelopedWith" src="Images/DevelopedWith.png" alt="Created with Dashcode">
+        <div class="grouptitle" id="article-length"></div>
+        <img src="Images/Smaller.tif" width="16" height="16" onclick="scaleToMin()" id="sliderMin">
+        <input id="slider" type="range" min="0" value="50" max="100" oninput="scaleArticles(this.value)">
+        <img src="Images/Bigger.tif" width="16" height="16" onclick="scaleToMax()" id="sliderMax">
+        <div id="done"></div>
+        <div id="text"></div>
+        <div id="text1"></div>
+        <input id="textField" type="text" name="" value="random.rrr3@gmail.com">
+    </div>
+</body>
+</html>
